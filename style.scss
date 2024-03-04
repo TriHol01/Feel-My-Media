@@ -1,0 +1,15 @@
+@use 'partials';
+
+//Generel Styling
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+    background-color: partials.$eggshell;
+}
+img{
+    width: 100%;
+}
