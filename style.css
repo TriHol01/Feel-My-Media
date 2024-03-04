@@ -10,4 +10,57 @@ body {
 
 img {
   width: 100%;
+}
+
+header {
+  margin-top: 4em;
+}
+
+.desktop-nav {
+  color: #0b090a;
+  height: 20em;
+  display: flex;
+}
+.desktop-nav ul {
+  display: flex;
+  list-style-type: none;
+}
+.desktop-nav li a {
+  text-decoration: none;
+  color: #5B6475;
+  padding: 5em;
+  text-align: center;
+  font-family: museo;
+}
+
+.logo-container {
+  display: flex;
+}
+
+.logo {
+  width: 300px;
+  position: relative;
+  -o-object-position: center;
+     object-position: center;
+}
+
+.mobile-nav img {
+  justify-content: right;
+  align-content: center;
+  height: 4em;
+  width: auto;
+}
+
+.mobile-nav {
+  display: none;
+  cursor: pointer;
+}
+
+.toggleShow {
+  display: flex !important;
+  flex-direction: column;
+}
+
+.active {
+  color: #bf8f50;
 }/*# sourceMappingURL=style.css.map */

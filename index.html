@@ -5,30 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Referencer</title>
     <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/beb1eb477d.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://use.typekit.net/wdt8wqw.css">
 </head>
 <body>
-
     <!--Header-->
 
     <header>
 
-        <!--Logo-->
-
-        <a href="index.html"><img class="logo" src="FeelMyMedia_lightLogo.png" alt="feel my media logo"></a>
-        
         <!--Burgermenu-->
 
         <nav class="mobile-nav">
-            <i class="navToggle bars fa-solid fa-bars fa-2xl"></i>
+            <img class="navToggle" src="bars-solid.png" alt="burgermenu">
+            <div class="logo-container"><a href="index.html"><img class="logo" src="Logo_CremeDarkBlue.png" alt="feel my media logo"></a></div>
         </nav>
+
 
         <!--Desktop navigation-->
         <nav class="desktop-nav">
             <ul>
                 <li><a href="#">Muligheder</a></li>
                 <li><a class="active" href="#">Referencer</a></li>
+                <li><a href=""><img class="logo" src="Logo_CremeDarkBlue.png" alt="feel my media logo"></a></li>
                 <li><a href="#">Blog</a></li>
                 <li><a href="#">Om</a></li>
                 <li><a href="#">Kontakt</a></li>
@@ -88,6 +85,14 @@
         <p>Feel My Media, Media allé 24, 2400 Media</p>
     </div>
    </footer>
+
+   <script>
+    const navbarToggle = () => {
+    const nav = document.querySelector('.desktop-nav');
+    nav.classList.toggle('toggleShow');
+    }
+    document.querySelector('.navToggle').addEventListener('click', navbarToggle);
+</script>
 
 </body>
 </html>

@@ -13,3 +13,52 @@ body{
 img{
     width: 100%;
 }
+
+//Header
+header{
+margin-top: 4em;
+}
+
+.desktop-nav{
+    color: partials.$midnight-black;
+    height: 20em;
+    display: flex;
+
+    ul{
+        display: flex;
+        list-style-type: none;
+    }
+    li a{
+        text-decoration: none;
+        color: partials.$dark-blue;
+        padding: 5em;
+        text-align: center;
+        font-family: museo
+    }
+}
+
+.logo-container{
+    display: flex;
+}
+.logo{
+    width: 300px;
+    position: relative;
+    object-position: center;
+}
+.mobile-nav img{
+    justify-content: right;
+    align-content: center;
+    height: 4em;
+    width: auto;
+}
+.mobile-nav{
+   display: none;
+   cursor: pointer; 
+}
+.toggleShow{
+    display: flex !important;
+    flex-direction: column;
+}
+.active{
+    color: partials.$golden;
+}
