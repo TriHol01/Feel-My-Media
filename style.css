@@ -30,7 +30,6 @@ header {
   color: #5B6475;
   padding: 5em;
   text-align: center;
-  font-family: museo;
 }
 
 .logo-container {
@@ -63,4 +62,10 @@ header {
 
 .active {
   color: #bf8f50;
+}
+
+@media screen and (min-width: 990) {
+  .desktop-nav {
+    display: none;
+  }
 }/*# sourceMappingURL=style.css.map */
